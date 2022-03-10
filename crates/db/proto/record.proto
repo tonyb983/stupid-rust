@@ -1,0 +1,8 @@
+syntax = "proto3";
+package sdb.rpc;
+
+message Record {
+    string cmd = 1;
+    string key = 2;
+    string value = 3;
+}

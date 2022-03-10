@@ -1,0 +1,47 @@
+syntax = "proto3";
+package sdb.rpc;
+
+enum StatusCode {
+    OK = 0;
+    FAIL = 1;
+}
+
+service Mdb {
+    rpc Get(GetRequest) returns (GetResponse) {}
+    rpc Set(SetRequest) returns (SetResponse) {}
+    rpc Delete(DeleteRequest) returns (DeleteResponse) {}
+}
+
+message GetRequest {
+    string key = 1;
+    string clientId = 2;
+}
+
+message GetResponse {
+    string value = 1;
+    string resp_msg = 2;
+    StatusCode statusCode = 3;
+}
+
+message SetRequest {
+    string key = 1;
+    string value = 2;
+    string clientId = 3;
+}
+
+message SetResponse {
+    string message = 1;
+    string resp_msg = 2;
+    StatusCode statusCode = 3;
+}
+
+message DeleteRequest {
+    string key = 1;
+    string clientId = 2;
+}
+
+message DeleteResponse {
+    string message = 1;
+    string resp_msg = 2;
+    StatusCode statusCode = 3;
+}

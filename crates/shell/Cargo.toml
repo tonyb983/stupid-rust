@@ -1,0 +1,14 @@
+[package]
+authors = ["tony b. <tonyb983@gmail.com>"]
+default-run = "sshell"
+description = "Writing a simple shell in rust because I'm stupid."
+edition = "2021"
+license = "MPL-2.0"
+name = "stupid-shell"
+repository = "github.com/tonyb983/stupid_rust"
+version = "0.1.0"
+
+[dependencies]
+once_cell = "1.10.0"
+serde = { version = "1.0.136", features = ["derive"] }
+uuid = { version = "0.8.2", features = ["v4", "serde"] }

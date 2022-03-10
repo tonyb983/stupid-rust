@@ -1,0 +1,19 @@
+[package]
+authors = ["tony b. <tonyb983@gmail.com>"]
+default-run = "sdbc"
+description = "Writing a simple database (along with client and server) because im stupid"
+edition = "2021"
+license = "MPL-2.0"
+name = "stupid-db-client"
+repository = "github.com/tonyb983/stupid_rust"
+version = "0.1.0"
+
+[dependencies]
+bytes = { version = "1.1.0", features = ["serde"] }
+once_cell = "1.10.0"
+prost = "0.9.0"
+prost-types = "0.9.0"
+s_db = { path = "../db", package = "stupid-db" }
+s_server = { path = "../db-server", package = "stupid-db-server" }
+serde = { version = "1.0.136", features = ["derive"] }
+uuid = { version = "0.8.2", features = ["v4", "serde"] }
