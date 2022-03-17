@@ -1,3 +1,7 @@
+#![feature(is_some_with)]
+#![allow(dead_code, unused)]
+
+mod config;
 mod v1;
 mod v2;
 

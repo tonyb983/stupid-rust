@@ -1,0 +1,8 @@
+debug = false
+
+[data]
+save-path = "./data/"
+save-to-disk = true
+
+[wal]
+use-wal = false

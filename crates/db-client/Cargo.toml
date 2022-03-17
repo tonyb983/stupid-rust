@@ -17,3 +17,6 @@ s_db = { path = "../db", package = "stupid-db" }
 s_server = { path = "../db-server", package = "stupid-db-server" }
 serde = { version = "1.0.136", features = ["derive"] }
 uuid = { version = "0.8.2", features = ["v4", "serde"] }
+
+[dev-dependencies]
+pretty_assertions = "1.2.0"

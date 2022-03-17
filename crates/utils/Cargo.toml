@@ -1,0 +1,10 @@
+[package]
+authors = ["tony b. <tonyb983@gmail.com>"]
+description = "Shared common utilities used between all my stupid crates."
+edition = "2021"
+license = "MPL-2.0"
+name = "stupid-utils"
+repository = "github.com/tonyb983/stupid_rust"
+version = "0.1.0"
+
+[dependencies]
